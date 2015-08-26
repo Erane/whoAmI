@@ -1,0 +1,459 @@
+/*基本样式 开始*/
+body{
+    overflow: hidden;
+    position: relative;
+    height: 999px;
+}
+#wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.page{
+    height: 999px;
+    position: relative;
+    text-align: center;
+    /*background: cornflowerblue;*/
+    background: rgb(107,197,227);
+}
+/*.page1{*/
+    /*background: cornflowerblue;*/
+/*}*/
+/*.page2{*/
+    /*/!*background: orange;*!/*/
+    /*background: rgb(234,239,243);*/
+/*}*/
+/*.page3{*/
+    /*background: hotpink;*/
+/*}*/
+/*.page4{*/
+    /*background:mediumaquamarine;*/
+/*}*/
+.menu{
+    position: fixed;
+    top: 50%;
+    right: 50px;
+}
+.menu>li{
+    display: block;
+    height: 13px;
+    width: 13px;
+    border: 2px solid #155b76;
+    margin-bottom: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.menu>li.active{
+    background: #155b76;
+}
+.page>h2{
+    position: relative;
+    top: 8%;
+    font-size: 60px;
+    font-weight: 100;
+    color: white;
+}
+/*基本样式 结束*/
+
+/*---------------------------------------------同类样式----------------------------------------------------------------------*/
+.menu,.page1>p,.page2>#iWill>li>a,#line>.circle{
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.page2>h2,.page2>#iWill,.page3>h2,#line,.page4>h2,#Q-And-A,.page5>#callMe{
+    opacity: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*
+  第一屏 开始
+*/
+.page1>#name{
+    font-size: 80px;
+    font-weight:normal;
+    color: white;
+    letter-spacing: 0.02em;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: show 1s ease-in-out ;
+    -moz-animation: show 1s ease-in-out ;
+    -ms-animation: show 1s ease-in-out ;
+    -o-animation: show 1s ease-in-out ;
+    animation: show 1s ease-in-out ;
+}
+.page1>#name::after{
+    content: "男,24岁";
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+    vertical-align: baseline;
+    left: 100%;
+    font-size: 20px;
+    font-weight: 100;
+}
+.page1>small{
+    position: relative;
+    top: 35%;
+    color: #d1d9e8;
+    font-size: 25px;
+    font-weight: 100;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    -webkit-animation: show 1s ease-in-out ;
+    -moz-animation: show 1s ease-in-out ;
+    -ms-animation: show 1s ease-in-out ;
+    -o-animation: show 1s ease-in-out ;
+    animation: show 1s ease-in-out ;
+}
+.page1>p{
+    position: relative;
+    top: 35%;
+    color: white;
+    font-size:60px;
+    font-weight: 100;
+    -webkit-animation: show 1s ease-in-out ;
+    -moz-animation: show 1s ease-in-out ;
+    -ms-animation: show 1s ease-in-out ;
+    -o-animation: show 1s ease-in-out ;
+    animation: show 1s ease-in-out ;
+}
+.page1>a{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    padding: 5px 10px;
+    font-size: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    background: cornflowerblue;
+}
+.page1>a:hover{
+    color: rgb(107,197,227);
+    background: white;
+    text-decoration: none;
+}
+/*
+    第一屏 结束
+*/
+
+/*
+  第二屏 开始
+*/
+.page2>h2{
+    text-align: center;
+}
+.page2>#iWill{
+    position: absolute;
+    left: 282px;
+    top: 270px;
+    height: 600px;
+}
+.page2>#iWill>li{
+    margin-bottom: 7%;
+    height: 50px;
+    background: #c7ede9;
+    position: relative;
+    -webkit-box-shadow: 3px 3px #6e7d7e;
+    -moz-box-shadow:  3px 3px #6e7d7e ;
+    box-shadow: 3px 3px #6e7d7e;
+}
+.page2>#iWill>li>a{
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-right: 30px;
+    color: white;
+    font-size: 15px;
+}
+.page2>#iWill>li:nth-of-type(1){
+    width: 1200px;
+}
+.page2>#iWill>li:nth-of-type(2){
+    width: 1000px;
+}
+.page2>#iWill>li:nth-of-type(3){
+    width:900px;
+}
+.page2>#iWill>li:nth-of-type(4){
+    width: 400px;
+}
+.page2>#iWill>li:nth-of-type(5){
+    width: 540px;
+}
+.page2>#iWill>li>.wik{
+    width: 360px;
+    position: absolute;
+    background:#d6efff;
+    left: 50%;
+    top: -25px;
+    margin-left: 220px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    list-style: circle inside;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.wik>li{
+    color:#2a7da9;
+    text-align: left;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+.page2>#iWill>li:hover .wik{
+    visibility: visible;
+    margin-left: 0;
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+/*
+    第二屏 结束
+*/
+
+/*
+    第三屏 开始
+*/
+
+#line{
+    color: white;
+    width: 80%;
+    height: 1px;
+    margin:350px auto 0 auto;
+    position: relative;
+    text-align: left;
+    background:-webkit-linear-gradient(left,transparent,white,white,white,white,transparent);
+    background:-ms-linear-gradient(left,transparent,white,white,white,white,transparent) ;
+    background:-o-linear-gradient(left,transparent,white,white,white,white,transparent) ;
+    background:-moz-linear-gradient(left,transparent,white,white,white,white,transparent);
+    background:linear-gradient(left,transparent,white,white,white,white,transparent);
+}
+#line>.circle{
+    height: 10px;
+    width: 10px;
+    background: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+#line>.time{
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    width: 171px;;
+}
+#line>.where{
+    position: absolute;
+    font-size: 25px;
+    margin-top: 5px;
+    width: 430px;
+}
+#line>.job{
+    position: absolute;
+    font-size:20px;
+    margin-top: 40px;
+    font-weight: 100;
+    width: 140px;
+}
+#line>.duty{
+    position: absolute;
+    margin-top: 90px;
+    font-size: 17px;
+    font-weight: 100;
+}
+#line>.circle1{
+    left: 370px;
+}
+#line>.duty1{
+    width: 280px;
+}
+#line>.time1,#line>.where1,#line>.job1,#line>.duty1{
+    left: 390px;
+}
+#line>.circle2{
+    left: 860px;
+}
+#line>.duty2{
+    width: 370px;
+    list-style: circle inside;
+}
+#line>.time2,#line>.where2,#line>.job2,#line>.duty2{
+    left: 880px;
+}
+#line>.duty2>li{
+    padding: 0 0 5px 0;
+}
+/*
+    第三屏 结束
+*/
+/*
+    第四屏 开始
+*/
+#Q-And-A{
+    width: 60%;
+    height: 500px;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    /*background: red;*/
+}
+#Q-And-A>li{
+    color: #187adb;
+    font-size: 28px;
+    font-weight: 100;
+    list-style:decimal ;
+    cursor: pointer;
+}
+#Q-And-A>li>.keys{
+    width: auto;
+    color: #2a7da9;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: text;
+    background: #d6efff;
+    padding: 5px 0 5px 2px;
+    border-radius: 5px;
+    display: none;
+}
+#Q-And-A>li>.keys a{
+
+    color: #2a7da9;
+
+}
+.keys>.space{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+/*
+    第四屏 结束
+*/
+
+/*
+    第五屏 开始
+*/
+
+.page5>#callMe{
+    height: 200px;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*background: red;*/
+    font-weight: 100;
+}
+#callMe>h3{
+    font-size: 50px;
+    font-weight: 100;
+}
+#callMe>p{
+    font-size: 35px;
+}
+/*
+    第五屏 结束
+*/
+
+/*--------------------------------------------淡入动画---------------------------------------------------------------------*/
+@-webkit-keyframes show {
+    0%{
+        opacity: 0;
+        display: none;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    100%{
+        opacity: 1;
+        display: block;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+}
+@-moz-keyframes show {
+    0%{
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    100%{
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+}
+@-o-keyframes show {
+    0%{
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    100%{
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+}
+@-ms-keyframes show {
+    0%{
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    100%{
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    }
+    100%{
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+}
+.on{
+    -webkit-animation: show 1s ease-in-out ;
+    -moz-animation: show 1s ease-in-out ;
+    -ms-animation: show 1s ease-in-out ;
+    -o-animation: show 1s ease-in-out ;
+    animation: show 1s ease-in-out ;
+
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
