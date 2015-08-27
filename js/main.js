@@ -31,17 +31,37 @@ var method={ //常用事件或功能封装
         if(document.addEventListener){
             obj.addEventListener(type,fn,false)
         }else if(document.attachEvent){
-            obj.attachEvent("on"+type,fn)
+            obj.attachEvent("on"+type,function(){
+                fn.call(obj);
+            })
+        }else{
+            obj["on"+type]=fn;
         }
-        obj["on"+type]=fn;
     },
     removeEvent:function(obj,type,fn){
         if(document.removeEventListener){
             obj.removeEventListener(type,fn)
         }else if(document.detachEvent){
             obj.detachEvent("on"+type,fn)
+        }else{
+            obj["on"+type]=null;
         }
-        obj["on"+type]=null;
+    },
+    //阻止事件
+    stopPropagation:function(e){
+        if(e.stopPropagation){
+            e.stopPropagation()
+        }else{
+            e.cancelBubble=true;
+        }
+    },
+    //取消事件默认行为
+    preventDefault:function(e){
+        if(e.preventDefault){
+            e.preventDefault()
+        }else{
+            e.returnValue=false;
+        }
     }
 };
 
