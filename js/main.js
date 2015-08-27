@@ -183,5 +183,5 @@ window.onload=function(){
     console.log("没有做响应式处理");
     console.log("没有做移动端处理");
     console.log("目前人在佛山");
-    console.log("计划9月初(5号前)到深圳,因为要准备,所以不能马上到深圳面试,抱歉");
+    console.log("计划9月初(5号前)到深圳,因为要准备,所以可能不能隔天就到深圳面试,抱歉");
 };
