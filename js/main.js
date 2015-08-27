@@ -124,6 +124,7 @@ window.onload=function(){
                         case 4:
                             $("#callMe").addClass("on").css("opacity","1");
                             break;
+                        default :
                     }
 
                     for(var i=0;i<nodes.length;i++){//清空li的样式

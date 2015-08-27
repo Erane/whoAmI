@@ -233,6 +233,13 @@ body{
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
+/*#iWill>li>p{*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 5px;*/
+    /*font-size: 14px;*/
+    /*color: #0e8fea;*/
+/*}*/
 /*
     第二屏 结束
 */
