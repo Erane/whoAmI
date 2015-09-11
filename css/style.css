@@ -131,7 +131,7 @@ body{
     -o-animation: show 1s ease-in-out ;
     animation: show 1s ease-in-out ;
 }
-.page1>a{
+.page1>.less{
     position: absolute;
     top: 25px;
     right: 50px;
@@ -148,6 +148,9 @@ body{
     color: rgb(107,197,227);
     background: white;
     text-decoration: none;
+}
+#cake2:hover{
+    background: none;
 }
 /*
     第一屏 结束
